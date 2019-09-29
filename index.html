@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='Script\jquery-3.3.1.min.js'></script>
+    <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='Css/index.css' rel='stylesheet' type='text/css'>
+    <script src='Script\bootstrap.min.js'></script>
+    <link href='Css/glider.min.css' rel='stylesheet' type='text/css'>
+    <script src='Script\glider.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <title>Alfon Labadan - Porfolio</title>
+</head>
+
+<body>
+    <div class="container-fluid h-100" style="padding:0px;position: relative;">
+        <p class="pportfolio">AJ.</p>
+        <p class="pcopy">2019 Copyrights. All Rights Reserved</p>
+        <p class="puidesign"><span style="color: #F92D47;z-index:9999;font-weight: bold;"><b>UI</b></span>&nbsp;DESIGN
+        </p>
+        <div class="row h-100 align-items-center " style="padding:0px;">
+            <div class="col-lg-7 text-center justify-content-center" id="particles-js"
+                style="background-color: #212121;position:relative;">
+                <div class="form-group " style="margin-left: 40px;">
+                    
+                    <div id="typed-strings" style = "z-index: 99999999">
+                        <p class="phi">Hi.</p>
+                        <p class="phi">Hola.</p>
+                        <p class="phi">여보세요.</p>
+                        <p class="phi">
+                            你好.</p>
+                    </div>
+                    <span id="typed" style = "z-index: 99999999"></span>
+                </div>
+            </div>
+            <div class="col-lg-5" style="margin-top: 10px;padding-left: 40px;position:relative;">
+                
+                <p class="pdesign">Design Labs</p>
+
+                <hr>
+                <p class="pdesigndesc">Design laboratory is a collection of my personal projects and experiments.As a
+                    Web Developer/Desinger I always take some time to upgrade my skills and build new creative design
+                    concepts. I work hard to keep my coding skills up to date.</p>
+                <div class="glider-contain" style="margin-top:40px;">
+                    <div class="glider" style="padding:0px;">
+                        <div class="card-container" data-rel="1">
+                            <p class="ptype">WEB DESIGN</p>
+                            <p class="ptitle">Datask</p>
+                            <p class="ptitledesc">We design and create thoughtful experience to help gain competative
+                                advantage and grow your business even further.</p>
+                            <P class="plearnmore">Learn More</P>
+                        </div>
+                        <div class="card-container">
+                            <p class="ptype">WEB DESIGN</p>
+                            <p class="ptitle">Dota 2</p>
+                            <p class="ptitledesc">Dota 2 is a multiplayer online battle arena video game developed and
+                                published by Valve Corporation.</p>
+                            <P class="plearnmore">Learn More</P>
+                        </div>
+                        <div class="card-container">
+                            <p class="ptype">WEB DESIGN</p>
+                            <p class="ptitle">AnimeSaga</p>
+                            <p class="ptitledesc">Anime and manga recommendations, reviews and more!</p>
+                            <P class="plearnmore">Learn More</P>
+                        </div>
+                        <div class="card-container">
+                            <p class="ptype">WEB DESIGN</p>
+                            <p class="ptitle">Restaurant</p>
+                            <p class="ptitledesc">Our Mission is to provide fresh, healthy, nutritious and great tasting
+                                food at reasonable prices in a clean, friendly and convenient environment.</p>
+                            <P class="plearnmore">Learn More</P>
+                        </div>
+                        <div class="card-container">
+                            <p class="ptype">WEB DESIGN</p>
+                            <p class="ptitle">VelcoAsia Management</p>
+                            <p class="ptitledesc">VelcoAsia Management Corporation is a Philippine enterprise consisting
+                                of 15 member companies with over 350 regular employees.</p>
+                            <P class="plearnmore">Learn More</P>
+                        </div>
+                        <div class="card-container">
+                            <p class="ptype">WEB DESIGN</p>
+                            <p class="ptitle">Datask</p>
+                            <p class="ptitledesc">We design and create thoughtful experience to help gain competative
+                                advantage and grow your business even further.</p>
+                            <P class="plearnmore">Learn More</P>
+                        </div>
+                        <div class="card-container">
+                            <p class="ptype">WEB DESIGN</p>
+                            <p class="ptitle">Datask</p>
+                            <p class="ptitledesc">We design and create thoughtful experience to help gain competative
+                                advantage and grow your business even further.</p>
+                            <P class="plearnmore">Learn More</P>
+                        </div>
+
+                    </div>
+                    <div class="form-inline" style="margin-top: 40px;">
+                        <button class="btnprev">&lt;</button>
+                        <button class="btnnext">&#62;</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        smartBackspace: true,
+        typeSpeed: 40,
+        backDelay: 5000
+    });
+</script>
+<script>
+    new Glider(document.querySelector('.glider'), {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        draggable: true,
+        dots: '.dots',
+        arrows: {
+            prev: '.btnprev',
+            next: '.btnnext'
+        }
+    });
+
+</script>
+<script src="Script/particles.min.js"></script>
+<script src="Script/app.js"></script>
+
+</html>

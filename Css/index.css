@@ -1,0 +1,215 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #EEEEEE;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+#particles-js {
+	height: 100%;
+	z-index: 9;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	padding: 0px;
+	margin:0px;
+}
+.particles-js-canvas-el {
+	position: absolute;
+	padding: 0px;
+	margin:0px;
+}
+
+.p {
+    background: #CB356B;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #BD3F32, #CB356B);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Muli;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    font-size: 4rem;
+    
+}
+
+.phi {
+    font-family: Keep Calm;
+    font-weight: bold;
+    color: white;
+    font-size: 6rem;
+    margin-top: 10px;
+}
+
+.pname {
+    font-family: Keep Calm;
+    font-weight: bold;
+    color: #F92D47;
+    font-size: 4.4rem;
+    line-height: 50%;
+}
+
+.pportfolio {
+    font-family: Mont Demo;
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 1%;
+    font-weight: bold;
+    letter-spacing: 2px;
+    z-index: 99999999;
+    margin-left: 10px;
+}
+
+.puidesign {
+    font-family: Muli semibold;
+    color: white;
+    font-size: 1.2rem;
+    z-index: 99999999;
+    letter-spacing: -0.5px;
+    position: absolute;
+    bottom: 0;
+    padding-left: 10px;
+}
+
+.pdesign {
+    color: #212121;
+    font-family: Mont Demo;
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin-left: -2px;
+}
+
+.pdesigndesc {
+    color: #212121;
+    font-family: muli;
+    letter-spacing: -0.5px;
+    padding-right: 40px;
+}
+
+hr {
+    height: 1px;
+    width: 150px;
+    background-color: #F92D47;
+    text-align: left;
+    margin-top: -5px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    background-color: white;
+    -webkit-box-shadow: 0px 49px 46px -30px rgba(117, 117, 117, 0.53);
+    -moz-box-shadow: 0px 49px 46px -30px rgba(117, 117, 117, 0.53);
+    box-shadow: 0px 49px 46px -30px rgba(117, 117, 117, 0.53);
+    padding: 15px 20px;
+    width: 300px !important;
+    height: 270px !important;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-right: 10px;
+    border-bottom-color: 2px solid #EF5350;
+    border: 2px solid #616161;
+    position:relative;
+}
+
+.card-container:hover {
+    background-color: #F92D47;
+    border-color: #F92D47;
+}
+
+.card-container:hover .ptype  {
+    color: white;
+}
+
+
+.card-container:hover .ptitle {
+    color: white;
+}
+
+.card-container:hover .ptitledesc {
+    color: white;
+}
+
+.card-container:hover .plearnmore {
+    color: white;
+}
+
+
+.ptype {
+    color: #212121;
+    font-family: muli;
+    letter-spacing: -0.5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.ptitle {
+    font-family: Mont Demo;
+    font-weight: bold;
+    color: #212121;
+    font-size: 1.5rem;
+    margin-top: 25px !important;
+    transition: all 0.2s;
+}
+
+.ptitledesc {
+    font-family: muli;
+    letter-spacing: -0.5px;
+    color: #212121;
+    font-size: 0.9rem;
+    margin-top: -15px;
+      transition: all 0.2s;
+}
+
+.plearnmore {
+    font-family: muli;
+    letter-spacing: -0.5px;
+    color: #757575;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: absolute;
+    bottom: 0;
+}
+
+.plearnmore:hover {
+    color: #fafafa;
+}
+
+.btnprev, .btnnext {
+    font-family: muli;
+    border: 1px solid #212121;
+    padding: 1px 10px;
+    padding-bottom: 4px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    outline: none !important;
+}
+
+.btnprev:hover, .btnnext:hover {
+    background-color: #F92D47;
+    color: white;
+    border: 1px solid #F92D47;
+}
+
+.pcopy {
+    font-family: Muli semibold;
+    color: #212121;
+    letter-spacing: -0.5px;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    font-size:0,9rem;
+    padding-right:10px;
+}
