@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@font-face {
+	font-family: "AvertaStd-Regular";
+	src: url("../Font/AvertaStd-Regular/AvertaStd-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Mont DEMO";
+	src: url("../Font/mont/Mont-HeavyDEMO.otf");
+}
+
+@font-face {
+	font-family: "hind";
+	src: url("../Font/hind/hind-regular.otf");
+}
+
+@font-face {
+	font-family: "hind semibold";
+	src: url("../Font/hind/hind-semibold.otf");
+}
+
+@media only screen and (min-width: 1200px) {
+	.con {
+		max-width: 1360px !important;
+	}
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+	background-color: #1E2225;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+#particles-js {
+	background-color: #1E2225;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+}
+
+#overlay {
+	position: relative;
+	padding: 50px;
+}
+
+.pOccupation {
+	font-family: hind, sans-serif;
+	color: #9E9E9E;
+	font-size: 1rem;
+}
+
+.pName {
+	font-family: Space;
+	color: #F2AA4CFF;
+	font-size: 3rem;
+	margin-top: -20px;
+}
+
+.pAbout {
+	font-family: hind;
+	color: #9E9E9E;
+	font-size: 1rem;
+	margin-top: 30px;
+}
+
+button:hover {
+	cursor: pointer
+}
+
+button {
+	font-family: hind, roboto, sans-serif;
+	background: transparent;
+	outline: none;
+	position: relative;
+	color: #F2AA4CFF;
+	border: 2px solid #F2AA4CFF;
+	margin-top: 20px;
+	padding: 15px 40px;
+	overflow: hidden;
+}
+
+/*button:before (attr data-hover)*/
+
+button:hover:before {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+button:before {
+	content: attr(data-hover);
+	position: absolute;
+	top: 1.1em;
+	left: 0;
+	width: 100%;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 800;
+	font-size: .8em;
+	opacity: 0;
+	transform: translate(-100%, 0);
+	transition: all .3s ease-in-out;
+}
+
+/*button div (button text before hover)*/
+
+button:hover div {
+	opacity: 0;
+	transform: translate(100%, 0)
+}
+
+button div {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 800;
+	font-size: .8em;
+	transition: all .3s ease-in-out;
+}
+
+.pAbouttag {
+	font-family: Mont Demo;
+	color: #424242;
+	font-size: 3rem;
+}
+
+.pImproving {
+	font-family: hind, roboto, sans-serif;
+	color: #9E9E9E;
+	font-size: 0.9rem;
+	letter-spacing: 2px;
+	font-weight: bold;
+	margin-right: 35px;
+}
+
+UL {
+	list-style-type: none;
+}
+
+li {
+	font-family: hind;
+	color: white;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	margin-top: 10px;
+}
+
+.pMenu {
+	font-family: hind;
+	color: white;
+	font-size: 0.9rem;
+	cursor: pointer;
+	transform: rotate(-90deg);
+	/* Legacy vendor prefixes that you probably don't need... */
+	/* Safari */
+	-webkit-transform: rotate(-90deg);
+	/* Firefox */
+	-moz-transform: rotate(-90deg);
+	/* IE */
+	-ms-transform: rotate(-90deg);
+	/* Opera */
+	-o-transform: rotate(-90deg);
+}
+
+.pCopy {
+	font-family: hind;
+	color: white;
+	font-size: 0.9rem;
+}
+
+.conFooter {
+	position: fixed;
+	bottom: 1%;
+}
+
+.box {
+	width: 5px;
+	height: 40px;
+	background-color: #F2AA4CFF;
+	margin-top: 20px;
+}
+
+.pAj {
+	font-family: Mont Demo;
+	color: #9E9E9E;
+	font-size: 1.7rem;
+	margin-left: 10px;
+	margin-top: 27px;
+}
+
+.imgProfile {
+	filter: drop-shadow(5px 10px 5px #222);
+}
