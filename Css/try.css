@@ -125,3 +125,327 @@ html, body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: .5rem;
 }
+
+.tab-link {
+    display: -webkit-box;
+    display: flex;
+    position: relative;
+    background: white;
+    border-radius: 2px;
+}
+
+.tab-link hr {
+    -webkit-transition: all 375ms ease-out;
+    transition: all 375ms ease-out;
+    will-change: transform, background;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 2px;
+    height: 4px;
+    width: calc(100% / 5);
+    background: #b4b4b4;
+}
+
+.tab-link a {
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 1rem;
+    display: block;
+    width: calc(100% / 5);
+    padding: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.tab-link a:hover~hr {
+    background: #87a5c7;
+    -webkit-transition: background 250ms ease-out, -webkit-transform 250ms cubic-bezier(0, 0.5, 0.5, 1.1);
+    transition: background 250ms ease-out, -webkit-transform 250ms cubic-bezier(0, 0.5, 0.5, 1.1);
+    transition: transform 250ms cubic-bezier(0, 0.5, 0.5, 1.1), background 250ms ease-out;
+    transition: transform 250ms cubic-bezier(0, 0.5, 0.5, 1.1), background 250ms ease-out, -webkit-transform 250ms cubic-bezier(0, 0.5, 0.5, 1.1);
+}
+
+.tab-link a:active~hr {
+    background: #07f;
+    -webkit-transition: all 250ms ease-out;
+    transition: all 250ms ease-out;
+}
+
+.tab-link a:nth-child(1).active~hr {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+.tab-link a:nth-child(1):hover~hr, .tab-link a:nth-child(1):hover~.active~hr, .tab-link a:nth-child(1):focus~hr, .tab-link a:nth-child(1):focus~.active~hr, .tab-link a:nth-child(1):active~hr, .tab-link a:nth-child(1):active~.active~hr {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+.tab-link a:nth-child(2).active~hr {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.tab-link a:nth-child(2):hover~hr, .tab-link a:nth-child(2):hover~.active~hr, .tab-link a:nth-child(2):focus~hr, .tab-link a:nth-child(2):focus~.active~hr, .tab-link a:nth-child(2):active~hr, .tab-link a:nth-child(2):active~.active~hr {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.tab-link a:nth-child(3).active~hr {
+    -webkit-transform: translateX(200%);
+    transform: translateX(200%);
+}
+
+.tab-link a:nth-child(3):hover~hr, .tab-link a:nth-child(3):hover~.active~hr, .tab-link a:nth-child(3):focus~hr, .tab-link a:nth-child(3):focus~.active~hr, .tab-link a:nth-child(3):active~hr, .tab-link a:nth-child(3):active~.active~hr {
+    -webkit-transform: translateX(200%);
+    transform: translateX(200%);
+}
+
+.tab-link a:nth-child(4).active~hr {
+    -webkit-transform: translateX(300%);
+    transform: translateX(300%);
+}
+
+.tab-link a:nth-child(4):hover~hr, .tab-link a:nth-child(4):hover~.active~hr, .tab-link a:nth-child(4):focus~hr, .tab-link a:nth-child(4):focus~.active~hr, .tab-link a:nth-child(4):active~hr, .tab-link a:nth-child(4):active~.active~hr {
+    -webkit-transform: translateX(300%);
+    transform: translateX(300%);
+}
+
+.tab-link a:nth-child(5).active~hr {
+    -webkit-transform: translateX(400%);
+    transform: translateX(400%);
+}
+
+.tab-link a:nth-child(5):hover~hr, .tab-link a:nth-child(5):hover~.active~hr, .tab-link a:nth-child(5):focus~hr, .tab-link a:nth-child(5):focus~.active~hr, .tab-link a:nth-child(5):active~hr, .tab-link a:nth-child(5):active~.active~hr {
+    -webkit-transform: translateX(400%);
+    transform: translateX(400%);
+}
+
+main {
+    width: 100%;
+    padding: 6px;
+}
+
+@media only screen and (min-width: 800px) {
+    main {
+        border-radius: 2px;
+    }
+}
+
+.conBlack {
+    background-color: black;
+    padding: 40px 15px;
+}
+
+.conWhite {
+    background-color: white;
+    padding: 40px 15px;
+}
+
+.imgMe {
+    -webkit-box-shadow: 0px 0px 37px -16px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: 0px 0px 37px -16px rgba(0, 0, 0, 0.49);
+    box-shadow: 0px 0px 37px -16px rgba(0, 0, 0, 0.49);
+}
+
+.pAbout {
+    font-family: Roboto;
+    color: #454343;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.pAboutDesc {
+    font-family: Roboto;
+    color: #454343;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.imgSig {
+    filter: brightness(0%);
+    margin-top: 15px;
+}
+
+.button-container-2 {
+    position: relative;
+    width: 135px;
+    height: 50px;
+    margin-top: 20px;
+    overflow: hidden;
+    border: 1px solid #000;
+    font-family: roboto;
+    font-weight: 400;
+    font-size: 1.1rem;
+    transition: 0.5s;
+    -webkit-box-shadow: 0px 0px 37px -16px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: 0px 0px 37px -16px rgba(0, 0, 0, 0.49);
+    box-shadow: 0px 0px 37px -16px rgba(0, 0, 0, 0.49);
+}
+
+.button-container-2 button {
+    width: 101%;
+    height: 100%;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 1.1rem;
+    background: #212121;
+    -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+    mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+    -webkit-mask-size: 3000% 100%;
+    mask-size: 3000% 100%;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(29) forwards;
+    animation: ani2 0.7s steps(29) forwards;
+}
+
+.button-container-2 button:hover {
+    -webkit-animation: ani 0.7s steps(29) forwards;
+    animation: ani 0.7s steps(29) forwards;
+}
+
+.mas {
+    position: absolute;
+    color: #000;
+    text-align: center;
+    width: 101%;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 1.1rem;
+    position: absolute;
+    margin-top: 12px;
+    overflow: hidden;
+}
+
+@-webkit-keyframes ani {
+    from {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+    to {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+}
+
+@keyframes ani {
+    from {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+    to {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+}
+
+@-webkit-keyframes ani2 {
+    from {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+    to {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+}
+
+@keyframes ani2 {
+    from {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+    to {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+}
+
+.pAboutMeBack {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 10rem;
+    color: #fafafa;
+    position: absolute;
+}
+
+.pMySkills {
+    font-family: Roboto, sans-serif;
+    color: #212121;
+    font-size: 1.2rem;
+    font-weight: 700;
+    ;
+}
+
+.Count:after {
+    content: "%"
+}
+
+.skillbar {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    background: #eee;
+    height: 15px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+}
+
+.skillbar-title {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #212121;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.skillbar-title span {
+    font-family: Roboto;
+    font-weight: 700;
+    display: block;
+    line-height: 35px;
+}
+
+.skillbar-bar {
+    height: 15px;
+    width: 0px;
+    background: #6adcfa;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.skill-bar-percent {
+    font-family: Roboto;
+    font-weight: 400;
+    position: absolute;
+    right: 10px;
+    top: -10px;
+    font-size: 11px;
+    height: 15px;
+    line-height: 35px;
+    color: #212121;
+}
