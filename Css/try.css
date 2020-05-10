@@ -540,6 +540,10 @@ main {
     width: 100%;
 }
 
+.card, .card-deck {
+    transition: all 0.2s;
+}
+
 .lbltitle {
     width: 100%;
     font-size: 20px;
