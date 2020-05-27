@@ -46,7 +46,7 @@
                 <div class="col-lg-12 text-center">
                     <main ontouchstart id="styles">
                         <nav class="tab-link">
-                            <a>ALL</a>
+                            <a class="tabAll">ALL</a>
                             <a class="tabProject">PROJECTS</a>
                             <a class="tabWebapp">WEB APP</a>
                             <a class="tabSoftapp">SOFTWARE APP</a>
@@ -453,6 +453,12 @@
         $(".webdesign").css("display", "none");
         $(".project").css("display", "none");
         $(".webapp").css("display", "none");
+        $(".softapp").css("display", "block");
+    });
+    $(".tabAll").click(function () {
+        $(".webdesign").css("display", "block");
+        $(".project").css("display", "block");
+        $(".webapp").css("display", "block");
         $(".softapp").css("display", "block");
     });
 </script>
